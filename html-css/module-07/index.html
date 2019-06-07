@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module-7</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="page-header container">
+        <nav class="page-nav">
+            <a href="#" class="page-logo">Golden</a>
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="#">Home</a> </li>
+                <li class="nav-list-item"><a href="#">Services</a></li>
+                <li class="nav-list-item"><a href="#">Portfolio</a></li>
+                <li class="nav-list-item"><a href="#">About</a></li>
+                <li class="nav-list-item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services container">
+            <header class="services-header">
+                <h2 class="services-title">Services</h2>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur.</p>
+            </header>                
+            <ul class="services-list">
+                <li class="services-list-item icon-basket">
+                    <h3 class="service-name">E-Commerce</h3>
+                    <p class="service-dscr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolorum praesentium rerum in esse rem sint.</p>
+                </li>
+                <li class="services-list-item icon-laptop">
+                    <h3 class="service-name">Responsive web</h3>
+                    <p class="service-dscr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolorum praesentium rerum in esse rem sint.</p>
+                </li>
+                <li class="services-list-item icon-locked">
+                    <h3 class="service-name">Web security</h3>
+                    <p class="service-dscr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolorum praesentium rerum in esse rem sint.</p>
+                </li>
+            </ul>
+        </section>     
+        <section class="contact">
+            <header class="contact-header">
+                <h2 class="form-title">Contact us</h2>
+                <p class="sub-title">Lorem ipsum dolor sit amet consectetur.</p>
+            </header>
+            <form class="contact-form container" id="contact-form">   
+                <div class="form-left-side">
+                    <input type="text" id="name" placeholder="your name &ast;" name="user_name" required>
+                    <input type="email" id="email" placeholder="your e-mail &ast;" name="user_email" required>
+                    <input type="text" id="subject" placeholder="subject" name="subject">
+                </div>                       
+                <textarea id="message" placeholder="your message &ast;" rows="9" name="message" maxlength="500" required></textarea>
+                <button class="send-btn" type="submit">Send message</button>
+            </form>
+        </section>
+    </main>    
+</body>
+</html>

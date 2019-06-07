@@ -1,0 +1,137 @@
+/* Tablet */
+
+@media (min-width: 768px){
+    .container{
+        width: 67.2rem;
+    }
+
+    .page-header{
+        background-image: url(../img/header/tablet.jpg);
+    } 
+
+     /* X2 */
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx){
+        .page-header{
+            background-image: url(../img/header/tablet-X2.jpg);
+        } 
+    }
+    
+    /* X3 */
+    
+    @media (min-resolution: 288dpi), (min-resolution: 3dppx){
+        .page-header{
+            background-image: url(../img/header/tablet-X3.jpg);
+        } 
+    }
+    .page-nav{
+        padding-top: 3.8rem;
+        margin-bottom: 15rem;
+        flex-direction: row-reverse;    
+    }
+
+    .page-logo{
+        flex-grow: 1;
+    }
+    
+    .nav-list{   
+        margin-bottom: 0; 
+    }
+    .finding-section{
+        padding-bottom: 23.5rem;
+    }
+
+    .finding-section h2{
+        margin-bottom: 4rem;
+        font-size: 5.2rem;
+        line-height: 6.24rem;
+        padding: 0 8rem;
+        text-align: center;
+    }
+
+    .finding-section p{
+        margin-bottom: 3rem;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+    }
+
+    .partners{
+        padding-bottom: 4rem;
+    }
+    .partners-title{
+        margin-bottom: 3rem;
+    }
+
+    .partners-list{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .partners-list-item{
+        width: 22rem;
+        margin-bottom: 0 1rem 5.2rem;
+    }
+
+    .partners-list-item:nth-child(n+2){
+        margin-right: 0;
+    }
+    .partners-list-item:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 958px){
+    .container {
+        width: 942px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px){
+    .container{
+        width: 97.2rem;    
+    }
+    
+    .page-header{
+        background-image: url(../img/header/desktop.jpg);
+        background-size: cover;    
+    }
+
+    /* X2 */
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx){
+        .page-header{
+            background-image: url(../img/header/desktop-x2.jpg);
+        } 
+    }
+
+    /* X3 */
+
+    @media (min-resolution: 288dpi), (min-resolution: 3dppx){
+        .page-header{
+            background-image: url(../img/header/desktop-x3.jpg);
+        } 
+    }
+    .partners{
+        padding-bottom: 7.5rem;
+    }
+
+    .partners-title{
+        margin-bottom: 3.5rem;
+    }
+
+    .partners-list{
+        padding: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .partners-list-item:nth-last-child(-n+4){
+        margin-bottom: 0;
+    }
+
+}

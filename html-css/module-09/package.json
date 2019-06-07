@@ -1,0 +1,35 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "automation basics",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync src -w",
+    "dev": "npm run server",
+    "lint": "stylelint src/css/*.css",
+    "css": "postcss src/css/*.css --use autoprefixer --use cssnano -d build/css",
+    "clean": "rimraf build && mkdir build",
+    "html": "html-minifier --input-dir src --output-dir build --collapse-whitespace --file-ext html",
+    "images": "imagemin src/img/*/* --out-dir=build/img",
+    "prebuild": "npm run lint",
+    "build": "npm run clean && npm run images && npm run css && npm run html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christina-molchanova/goit-fe-course"
+  },
+  "author": "Kristina Molchanova <molchanova.cp@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.2.1",
+    "browser-sync": "^2.26.3",
+    "cssnano": "^4.1.5",
+    "html-minifier": "^3.5.20",
+    "imagemin-cli": "^3.0.0",
+    "mkdir": "0.0.2",
+    "postcss-cli": "^6.0.1",
+    "rimraf": "^2.6.2",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0"
+  }
+}

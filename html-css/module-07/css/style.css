@@ -1,0 +1,331 @@
+@font-face{
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/satisfy-v8-latin-regular.woff2') format('woff2'),
+         url('../fonts/satisfy-v8-latin-regular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/montserrat-v12-latin-800.woff2') format('woff2'),
+         url('../fonts/montserrat-v12-latin-800.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/pt-serif-v9-latin-italic.woff2') format('woff2'), 
+         url('../fonts/pt-serif-v9-latin-italic.woff') format('woff');
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;    
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: 'Momtserrat', sans-serif;
+    color: #222222;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, 
+button,
+textarea{
+    font-family: inherit;
+}
+
+.container{
+    width: 94rem;
+    margin: 0 auto;
+}
+
+.page-header{
+    margin-bottom: 12.2rem;
+}
+
+.page-nav{
+    padding-top: 2.85rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.page-logo{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fed136;
+    font-size: 2.8rem;
+    line-height: 4.1rem;
+    font-family: 'Satisfy', serif;   
+    animation: opacity 1.2s linear;
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    50%{
+        opacity: .5;
+        color: #57491a;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        color: #fed136;
+        transform: scale(1)
+    }
+}
+
+.nav-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 48.6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+
+.nav-list-item a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 4.1rem;
+    color: #222222;
+    transition: all 0.2s linear;     
+}
+
+.nav-list-item a:hover,
+.nav-list-item a:focus{
+    color: #fed136;   
+    transform: scale(.9);     
+}
+
+.services{
+    padding-bottom: 12rem;
+}
+
+.services-header{
+    margin-top: 0;
+    margin-bottom: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-title{
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #222222;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.025em;
+}
+
+.sub-title{
+    margin: 0;
+    font-family: 'PT Serif';
+    color: #9b9b9b;
+    font-size: 1.6rem;
+    line-height: 1.92rem;
+}
+
+.services-list{    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.services-list-item{
+    margin: 0;   
+    padding-top: 9.8rem;
+    width: 29rem;     
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
+    position: relative;  
+}
+
+.service-name{
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+}
+
+.service-dscr{
+    color: #9b9b9b;
+    margin: 0;
+}
+
+.services-list-item::before{
+    content: '';
+    width: 7.4rem;
+    height: 7.4rem;
+    display: block;
+    position: absolute;  
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-basket::before{
+    background: url(../img/icon-1.png) no-repeat;
+    
+}
+
+.icon-laptop::before{
+    background: url(../img/icon-2.png) no-repeat;
+    
+}
+
+.icon-locked::before{
+    background: url(../img/icon-3.png) no-repeat;
+    
+}
+
+.contact{
+    /* height: 67.6rem; */
+    padding-top: 10.4rem;
+    padding-bottom: 11.6rem;
+    background-image: url(../img/map-image.jpg);    
+}
+
+.contact-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7.04rem;
+    
+    
+}
+
+.form-title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-top: 0;
+    margin-bottom: 1.44rem;
+    letter-spacing: -0.025em;
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    
+}
+
+.form-left-side{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input,
+            textarea{
+    color: #222222;
+    padding: 1.58rem;
+    margin-bottom: 3rem;
+    border-radius: 3px;
+    border: none;
+    width: 45.8rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+.contact-form input::placeholder,
+            textarea::placeholder{
+    text-transform: uppercase;
+    font-family: 'Momtserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: -0.025em;
+    color: #bbbbbb;
+}
+
+.contact-form input:required:valid,
+            textarea:required:valid{
+    outline-color: #0d7c09;           
+}
+
+.contact-form input:invalid,
+            textarea:invalid{
+    outline-color: #ce1313;    
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.send-btn{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    padding: 2.5rem 4rem;
+    background-color: #fed136;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    width: 24rem;
+    margin-left: 50%;  
+    transform: translateX(-50%);      
+}
+
+.send-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #373535;
+	z-index: -1;
+	opacity: 0;	
+	transform: scaleX(.1);
+	transition: transform .3s, opacity .3s;
+}
+
+.send-btn:hover::before {
+	opacity: 1;
+    transform: translateX(0);
+    color: #fed136;
+    box-shadow: 10px -10px 30px 0px rgba(0,0,0,0.75);  
+}
+
